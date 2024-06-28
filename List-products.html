@@ -53,7 +53,20 @@
         </div>
     </nav>
 
+    <!-- -Tabla
+-Producto
+-Detalle
+-Monto
+-Cantidad
+-Acciones -->
+
+
     <div class="container mt-5">
+
+        <!-- Crear nuevos productos
+        buscador -->
+
+
         <h2>Tabla de productos</h2>
         <div class="d-flex justify-content-between mb-3">
             <button class="btn btn-success"> <i class="fas fa-plus"></i> Crear nuevo registro</button>
@@ -66,6 +79,45 @@
             </div>
 
         </div>
+
+        <table class="table table-striped table-inverse table-responsive">
+            <thead class="thead-inverse">
+                <tr>
+                    <th>Id</th>
+                    <th>Produto</th>
+                    <th>Detalle</th>
+                    <th>Monto</th>
+                    <th>Cantidad</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Camisas</td>
+                    <td>Todo tipo de tamaño</td>
+                    <td>$30</td>
+                    <td>8</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm"> <i class="fas fa-eye"></i>Ver</button>
+                        <button class="btn btn-warning btn-sm"> <i class="fas fa-edit"></i>Editar</button>
+                        <button class="btn btn-danger btn-sm"> <i class="fas fa-trash"></i> Eliminar</button>  
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Pantalonetas</td>
+                    <td>Para vacaciones</td>
+                    <td>$15</td>
+                    <td>5</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm"> <i class="fas fa-eye"></i>Ver</button>
+                        <button class="btn btn-warning btn-sm"> <i class="fas fa-edit"></i>Editar</button>
+                        <button class="btn btn-danger btn-sm"> <i class="fas fa-trash"></i> Eliminar</button>  
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
     </div>
     <!-- Optional JavaScript -->
