@@ -12,12 +12,10 @@ console.log('Hola Mundo');
 
 let nombre = "Minor"
 let apellido = "Solano"
-let edad = "31"
+let edad = 34
 let dirección = "Cartago"
 
 
-console.log(nombre)
-console.log(apellido)
-console.log(edad)
-console.log(dirección)
+console.log("Hola mi nombre es "+nombre+" y mi apellido es "+apellido+" mi edad es "+edad+" vivo en "+dirección)
+
 
