@@ -5,7 +5,7 @@
 
 
 
-// 1. Las variables almacenar datos var = let
+// 2. Tipos de datos
 
 
 //Zona para declarar las variables 
