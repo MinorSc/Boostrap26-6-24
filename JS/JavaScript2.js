@@ -31,5 +31,52 @@ let Autos ={
     Model: ["Hilux", "Yaris", "Rav4"]
 }
 
-console.log(Autos);
+let mensaje = "La marca del auto es" +Autos.Marca+ "lo quieres comprar" +Autos.Comprar
 
+//Patron literal
+let mensaje2 = `La marca del auto es ${Autos.Marca} lo quieres comprar ${Autos.Comprar}`
+console.log(mensaje2);
+
+
+//3. Operadores aritméticos
+
+let suma = 5 + 3;
+let resta = 3 - 5;
+let multi = 5 * 2;
+let div = 8/2;
+let mod = 10%3;
+
+
+// comparación 
+console.log(5 == 5);
+console.log(5 == "5"); // igualdad débil   
+console.log(5 === "5"); // igualdad fuerte   
+console.log(5 != "5"); // false  
+console.log(5 !== "5"); // true   
+console.log(5 > 3); // true   
+console.log(5 < 3); // false  
+
+//lógicos 
+//&& - y - and 
+// || - 0 - or
+console.log(true && false);
+console.log(true || false);
+
+
+//4-Estructuras de control 
+
+let pato = true;
+
+if(pato = true) {  // si
+    alert(`Pato es verdadero ${pato}`)
+} else { // si no 
+    alert(`No cumple`)
+}
+
+let edad = 18
+
+if(edad >= 18) {  // si
+    alert(`Es mayor de edad tiene ${edad}`)
+} else { // si no 
+    alert(`Es menor de edad tiene ${edad}`)
+}
