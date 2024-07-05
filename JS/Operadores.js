@@ -73,10 +73,3 @@ if(pato = true) {  // si
     alert(`No cumple`)
 }
 
-let edad = 18
-
-if(edad >= 18) {  // si
-    alert(`Es mayor de edad tiene ${edad}`)
-} else { // si no 
-    alert(`Es menor de edad tiene ${edad}`)
-}
