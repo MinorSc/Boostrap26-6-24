@@ -1,22 +1,19 @@
 <!doctype html>
-<html lang="es">
-
-<head>
+<html lang="en">
+  <head>
     <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="CSS/styleNewProduct.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
 
-<body>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
         <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
-            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
@@ -25,14 +22,14 @@
                     <a class="nav-link" href="Index.html">Inicio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="List-products.html">Listado de Productos</a>
+                    <a class="nav-link" href="List-Products.html">Listado de Productos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="New-product.html">Crear Productor</a>
+                    <a class="nav-link" href="New-Product.html">Crear Producto</a>
                 </li>
+    
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownId">
                         <a class="dropdown-item" href="#">Action 1</a>
                         <a class="dropdown-item" href="#">Action 2</a>
@@ -48,59 +45,50 @@
             </form>
         </div>
     </nav>
+    
+    <!-- -Crear Formulario Centrado  
+    -Producto
+    -Detalle
+    -Monto
+    -Cantidad
+    -Boton -->
+    <!-- margin 0 auto -->
+     <!-- flex: row columns justify content center  -->
 
-
-    <!-- -Producto
--Detalle
--Monto
--Cantidad
--boton -->
-
-    <div class="container for__newProduct">
-        <div class="mb-3">
-            <label for="formGroupExampleInput" class="form-label">Producto</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre de Producto">
+    <div class="container d-flex justify-content-center">
+        <div class="col-md-6 "> 
+          <h2 class="text-center">Formulario de Producto</h2>
+          <form>
+            <div class="form-group">
+              <label for="producto">Producto</label>
+              <input type="text" class="form-control" id="producto" placeholder="Ingrese el nombre del producto">
+            </div>
+            <div class="form-group">
+              <label for="detalle">Detalle</label>
+              <input type="text" class="form-control" id="detalle" placeholder="Ingrese el detalle del producto">
+            </div>
+            <div class="form-group">
+              <label for="monto">Monto</label>
+              <input type="number" class="form-control" id="monto" placeholder="Ingrese el monto del producto">
+            </div>
+            <div class="form-group">
+              <label for="cantidad">Cantidad</label>
+              <input type="number" class="form-control" id="cantidad" placeholder="Ingrese la cantidad del producto">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+          </form>
         </div>
-        <div class="mb-3">
-            <label for="formGroupExampleInput2" class="form-label">Detalle</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Detalle del Producto">
-        </div>
-        <div class="mb-3">
-            <label for="formGroupExampleInput2" class="form-label">Monto</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Monto del Producto">
-        </div>
-        <div class="mb-3">
-            <label for="formGroupExampleInput2" class="form-label">Cantidad</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Cabtidad del Producto">
-        </div>
-
-        <!-- <div>
-            <button type="button" class="btn btn-success">Ingresar Producto</button>
-        </div> -->
-
-        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modelId">
-            <i class="fas fa-plus"></i> Ingresar Producto 
-        </button>
-        
-    </div>
-
-
+      </div>
 
 
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-        <script src="JS/NavBar.js"></script>
-</body>
-
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/NavBar.js"></script>
+  </body>
 </html>
