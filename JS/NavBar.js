@@ -2,16 +2,40 @@
 
 //Componente NavBar
 Mostrar_NavBar();
-
+//Objetos de Js     
 //Let Contenedor =ID
-//Let Plantilla = "Hola Mundo"
+//Let Plantilla = "Hola Mundo objetos de JS"
 //Contenedor.innerHTML = Plantilla
 function Mostrar_NavBar() {
-    let Opcion1 = "Inicio";
-    let Opcion2 = "Listado de Productos";
-    let Opcion3 = "Crear Producto";
-    let Opcion4 = "Pagina de Mercado";
+    // let Opcion1 = "Inicio";
+    // let Opcion2 = "Listado de Productos";
+    // let Opcion3 = "Crear Producto";
+    // let Opcion4 = "Pagina de Mercado";
 
+    // let Menu={
+    //     Nombre: "Inicio",
+    //     Ruta: "Index.html"
+    // }
+
+    let ListadoMenu = [
+        {
+            Nombre: "Inicio",
+            Ruta: "Index.html"  
+        },
+        {
+            Nombre: "Listado de Productos",
+            Ruta: "List-Products.html"  
+        },
+        {
+            Nombre: "Crear Producto",
+            Ruta: "New-Product.html"  
+        },
+        {
+            Nombre: "Pagina de Mercado",
+            Ruta: ""  
+        }
+    ]
+    console.log(ListadoMenu.length);
     let Contenedor = document.getElementById('V_NavBar')
 
     let Plantilla = `
@@ -24,16 +48,16 @@ function Mostrar_NavBar() {
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="nav-item active">
-                            <a class="nav-link" href="Index.html">${Opcion1} <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="${ListadoMenu[0].Ruta}">${ListadoMenu[0].Nombre} <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="List-Products.html">${Opcion2}</a>
+                            <a class="nav-link" href="${ListadoMenu[1].Ruta}">${ListadoMenu[1].Nombre}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="New-Product.html">${Opcion3}</a>
+                            <a class="nav-link" href="${ListadoMenu[2].Ruta}">${ListadoMenu[2].Nombre}</a>
                         </li>
                        <li class="nav-item">
-                            <a class="nav-link" href="#">${Opcion4}</a>
+                            <a class="nav-link" href="#">${ListadoMenu[3].Nombre}</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
