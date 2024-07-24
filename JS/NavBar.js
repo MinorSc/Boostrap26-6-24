@@ -1,11 +1,12 @@
 
 
-//Componente NavBar
-Mostrar_NavBar();
-//Objetos de Js     
-//Let Contenedor =ID
-//Let Plantilla = "Hola Mundo objetos de JS"
-//Contenedor.innerHTML = Plantilla
+document.addEventListener('DOMContentLoaded', () => {
+    Mostrar_NavBar()
+})
+
+
+
+
 function Mostrar_NavBar() {
     // let Opcion1 = "Inicio";
     // let Opcion2 = "Listado de Productos";
