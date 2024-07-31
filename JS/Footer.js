@@ -14,7 +14,7 @@ const Opciones_Footer = [
 
 function MostrarFooter() {
     let Contenedor = document.getElementById("V_Lista_Footer");
-    let plantilla;
+    let plantilla = "";
 
     Opciones_Footer.forEach(element => {
 
