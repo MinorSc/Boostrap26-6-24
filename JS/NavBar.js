@@ -21,19 +21,19 @@ function Mostrar_NavBar() {
     let ListadoMenu = [
         {
             Nombre: "Inicio",
-            Ruta: "Index.html"  
+            Ruta: "Index.html"
         },
         {
             Nombre: "Listado de Productos",
-            Ruta: "List-Products.html"  
+            Ruta: "List-Products.html"
         },
         {
             Nombre: "Crear Producto",
-            Ruta: "New-Product.html"  
+            Ruta: "New-Product.html"
         },
         {
             Nombre: "Pagina de Mercado",
-            Ruta: ""  
+            Ruta: ""
         }
     ]
     console.log(ListadoMenu.length);
@@ -47,29 +47,11 @@ function Mostrar_NavBar() {
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="${ListadoMenu[0].Ruta}">${ListadoMenu[0].Nombre} <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="${ListadoMenu[1].Ruta}">${ListadoMenu[1].Nombre}</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="${ListadoMenu[2].Ruta}">${ListadoMenu[2].Nombre}</a>
-                        </li>
-                       <li class="nav-item">
-                            <a class="nav-link" href="#">${ListadoMenu[3].Nombre}</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                <a class="dropdown-item" href="#">Action 1</a>
-                                <a class="dropdown-item" href="#">Action 2</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" onclick="CerrarSesion()">Cerrar Sesion</a>
-                        </li>
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="Nav_LI">
+                    
+                       
+        
+                       
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2" type="text" placeholder="Search">
@@ -80,5 +62,18 @@ function Mostrar_NavBar() {
 `
 
     Contenedor.innerHTML = Plantilla
+    Datos_LI(ListadoMenu)
+
+}
+
+function Datos_LI(datos) {
+    let contenedor2 = document.getElementById("Nav_LI")
+    datos.forEach(element => {
+        contenedor2.innerHTML += `
+         <li class="nav-item active">
+            <a class="nav-link" href="${element.Ruta}">${element.Nombre} <span class="sr-only">(current)</span></a>
+         </li>
+        `
+    });
 
 }
