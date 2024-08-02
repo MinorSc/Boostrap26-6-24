@@ -49,8 +49,8 @@ function Mostrar_Ligadelajusticia(Heroes) { //Firma
 
   Heroes.forEach(element => {
     plantilla += `
-      <div class="grid text-center">
-        <div class="card g-col-4 mb-4" style="width: 18rem;">
+      <div class="row spaced-div m-4">
+        <div class="card col-lg-3" style="width: 18rem;">
           <img src="${element.img}" class="card-img-top" alt="img">
           <div class="card-body">
             <h4 class="card-title">${element.nombre}</h4>
